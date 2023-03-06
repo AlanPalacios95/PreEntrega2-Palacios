@@ -22,17 +22,17 @@
     <header>
         <nav class="menu navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="menu__logo navbar-brand " href="#">DEMENTESGAMERS</a>
-                <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="menu__logo navbar-brand me-auto" href="#">DEMENTESGAMERS</a>
+                <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
                         <li class="lista__item"><a href="./index.html" class="item__nombre">Inicio</a></li>
                         <li class="lista__item"><a href="./pages/mi_cuenta.html" class="item__nombre">Mi cuenta</a></li>
-                        <li class="lista__item"><a href="./pages/sobre-nosotros.html" class="item__nombre">Sobre
-                                Nosotros</a> </li>
+                        <li class="lista__item"><a href="./pages/sobre-nosotros.html" class="item__nombre">Sobre Nosotros</a> </li>
                         <li class="lista__item"><a href="./pages/contacto.html" class="item__nombre">Contacto</a></li>
                     </ul>
                 </div>
@@ -40,158 +40,146 @@
         </nav>
     </header>
 
-    <main>
-        <div class="main__index">
-        <section class="conteiner-fluir">
-            <div id="carouselExampleCaptions" class="carousel slide">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="conteiner__img"
-                            src="https://assets.nuuvem.com/image/upload/v1/products/6307dc85ba5b7c0014a7501e/sharing_images/pt5vf76udky6sicrf45o.jpg"
-                            class="d-block w-100" alt="Hogwarts Legacy" class="conteiner__img">
-                        <div class="carousel-caption d-none d-md-block carrousel__container">
-                            <h5 class="conteiner__titulo"><b>Hogwart Legacy</b></h5>
-                            <p class="conteiner__descripcion">El nuevo titulo de Warner Bross super todas las
-                                espectativas <br>
-                                 <a href="./pages/hogwartslegacy.html" target="_blank">Ver mas</a></p>
+    <main class="conteiner-fluid">
+        <div class="row">
+            <div class="main__index col-md-8 mx-auto">
+                <section class="conteiner">
+                    <div id="carouselExampleCaptions" class="row carousel slide">
+                        <div class="carousel-indicators main__seleccion">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img class="conteiner__img"
+                                    src="https://assets.nuuvem.com/image/upload/v1/products/6307dc85ba5b7c0014a7501e/sharing_images/pt5vf76udky6sicrf45o.jpg"
+                                    class="d-block w-100" alt="Hogwarts Legacy">
+                                <div class="carousel-caption d-none d-md-block carrousel__container">
+                                    <h5 class="conteiner__titulo"><b>Hogwart Legacy</b></h5>
+                                    <p class="conteiner__descripcion">El nuevo titulo de Warner Bross supera todas las
+                                        espectativas <br>
+                                        <a href="./pages/hogwartslegacy.html" target="_blank"
+                                            class="carousel__enlace">Ver mas</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="conteiner__img"
+                                    src="https://www.residentevil.com/re4/assets/images/common/share-re.png"
+                                    class="d-block w-100" alt="Resident Evil">
+                                <div class="carousel-caption d-none d-md-block carrousel__container">
+                                    <h5 class="conteiner__titulo"><b>Resident Evil 4 Remake</b></h5>
+                                    <p class="conteiner__descripcion">Un nuevo trailer aumenta el hype</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="conteiner__img"
+                                    src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
+                                    class="d-block w-100" alt="Atomic Heart">
+                                <div class="carousel-caption d-none d-md-block carrousel__container">
+                                    <h5 class="conteiner__titulo"><b>Amotic Heart</b></h5>
+                                    <p class="conteiner__descripcion">La nueva bomba de Microsoft</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Siguiente</span>
+                        </button>
+                    </div>
+                </section>
+
+                <section class="container indice">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contendores__contenido">
+                            <img class="indice__img" src="https://cdn.akamai.steamstatic.com/steam/apps/990080/capsule_616x353.jpg?t=1676412613" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contendores__contenido">
+                            <img class="indice__img" src="https://sm.ign.com/ign_es/cover/r/resident-e/resident-evil-4-remake_z3ku.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contendores__contenido">
+                            <img class="indice__img" src="https://sm.ign.com/ign_es/cover/r/resident-e/resident-evil-4-remake_z3ku.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contendores__contenido">
+                            <img class="indice__img" src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="carousel-item">
-                        <img class="conteiner__img"
-                            src="https://reconectados.com.ar/wp-content/uploads/2023/01/1664824675_892989_1664872395_noticia_normal-1024x576.jpg"
-                            class="d-block w-100" alt="Resident Evil" class="conteiner__img">
-                        <div class="carousel-caption d-none d-md-block carrousel__container">
-                            <h5 class="conteiner__titulo"><b>Resident Evil 4 Remake</b></h5>
-                            <p class="conteiner__descripcion">Un nuevo trailer aumenta el hype</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="conteiner__img"
-                            src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
-                            class="d-block w-100" alt="Atomic Heart">
-                        <div class="carousel-caption d-none d-md-block carrousel__container">
-                            <h5 class="conteiner__titulo"><b>Amotic Heart</b></h5>
-                            <p class="conteiner__descripcion">La nueva bomba de Microsoft</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
+                </section>
+
+                <nav aria-label="...">
+                    <ul class="pagination">
+                        <li class="page-item disabled">
+                            <a class="page-link">Anterior</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item active" aria-current="page">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Siguiente</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-        </section>
-
-        <section class="container indice">
-            <div class="row row-cols-2 guia__noticias">
-                <div class="card col-6" style="width: 18rem;">
-                    <img class="card__img"
-                        src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/capsule_616x353.jpg?t=1676412613"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-
-                <div class="card col-6" style="width: 18rem;">
-                    <img class="card__img"
-                        src="https://sm.ign.com/ign_es/cover/r/resident-e/resident-evil-4-remake_z3ku.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-
-                <div class="card col-6" style="width: 18rem;">
-                    <img class="card__img"
-                        src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-
-                <div class="card col-6" style="width: 18rem;">
-                    <img class="card__img"
-                        src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
-                        class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                    </div>
-                </div>
-        </section>
-
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link">Anterior</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">2</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">Siguiente</a>
-                </li>
-            </ul>
-        </nav>
         </div>
     </main>
 
-    <footer class="footer">
-        <div class="footer__redes">
-        <p>Redes</p>
-        <div class="vr"></div>
-        <ul class="footer__lista">
+    <footer class="d-flex justify-content-center mx-0">
+        <section class="footer__redes text-center">
+          <p class="footer__titulo">Redes</p>
+          <ul class="footer__lista">
             <li class="footer__item">
-                <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="item__icon">
-                    <i class="fa-brands fa-instagram">/Dementesgamers</i>
-                </a>
+              <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__enlaces">
+                <i class="fa-brands fa-instagram footer__icono">/Dementesgamers</i>
+              </a>
             </li>
-
+      
             <li class="footer__item">
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-twitch">/Dementesgamers</i></a>
+              <a href="#" target="_blank" class="footer__enlaces">
+                <i class="fa-brands fa-twitch footer__icono">/Dementesgamers</i>
+              </a>
             </li>
             <li class="footer__item">
-                <a href="#" target="_blank">
-                    <i class="fa-brands fa-twitter">/Dementesgamers</i>
-                </a>
+              <a href="#" target="_blank" class="footer__enlaces">
+                <i class="fa-brands fa-twitter footer__icono">/Dementesgamers</i>
+              </a>
             </li>
-        </ul>
-        </div>
-
-        <div class="copyrigth">
-            <p class="copyrigth__texto">El nombre Dementesgamers y el logotipo son marcas registradas. Derechos
-                Reservados ©
-                Dementesgamers
-            </p>
-        </div>
-
-    </footer>
+          </ul>
+        </section>
+      
+        <section class="copyrigth text-center">
+          <p class="copyrigth__descripcion">El nombre Dementesgamers y el logotipo son marcas registradas. Derechos
+            Reservados ©
+            Dementesgamers
+          </p>
+        </section>
+      </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
