@@ -34,7 +34,7 @@ body {
   }
 .menu__logo {
     color: white;
-    height: 5rem;
+    height: 4rem;
     font-size: 3rem;
 }
 
@@ -77,9 +77,6 @@ body {
 
 footer {
     background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgba(13, 40, 38, 1) 10%);
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
     padding: 0;
 }
 
@@ -95,8 +92,6 @@ footer {
 
 .footer__lista {
     list-style-type: none;
-    display: flex;
-    flex-flow: column nowrap;
     padding: 0 1rem;
 }
 
@@ -107,7 +102,7 @@ footer {
 
 .copyrigth__descripcion {
     color:#e0e0e0;
-    margin: 4rem 0;
+    padding-left: 2rem;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
@@ -453,7 +448,7 @@ header {
 
 /*...Aside de Index..*/
 
-.hogwartslegacy__aside {
+.aside {
     margin-top: 0;
     grid-area: aside;
     background-color: white;
@@ -571,6 +566,47 @@ header {
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////...Resident Evil 4 Remake Trailer...///////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+*/
+.trailer__resident__evil__4remake {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        ". main aside"
+        ". main aside"
+        ". footer . ";
+    grid-template-rows: auto 46rem auto 11rem;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+}
+
+.resident__evil__4remake {
+    grid-area: main;
+    background-color: #e0e0e0;
+    display: flex;
+    font-family: 'Cabin', sans-serif;
+    flex-flow: column nowrap;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.footer__residentevil4remake {
+    grid-area: footer;
+}
+
+.residentevil__trailer {
+    width: 100%;
+    height: 33rem;
+}
+
+.resident__evil__4remake__rumores {
+
+    padding: 1rem 20%;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Sobre Nosotros.../////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
@@ -636,11 +672,65 @@ header {
     margin: 0 20%;
 }
 
+
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Mi Cuenta.../////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
 
+.micuenta__titulo {
+    font-size: 4rem;
+    text-align: center;
+    font-family: 'Cabin','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 900;
+    text-shadow: -3px 5px 2px white;
+    padding: 1rem 0;
+}
+
+.formulario__registro {
+    background-color: aliceblue;
+    width: 33rem;
+    height: 20rem;
+    margin: 2rem auto;
+    border: 2px solid black;
+    box-shadow: 0 5px 10px 3px rgb(0 0 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.registro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input {
+    color: black;
+    border: none;
+    background-color: aliceblue;
+    border-bottom: 2px solid #14362e;
+}
+
+label {
+    text-align: center;
+}
+
+.button__usuario {
+    margin-top: 2rem;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0 5px 10px -5 rgb(0, 0, 0);
+}
+
+label{
+    cursor: pointer;
+}
+
+.button__usuario:hover {
+    color: #32AE91;
+}
 
 /*...Tablet Design (1024*768)...*/
 /*
