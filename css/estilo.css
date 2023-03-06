@@ -77,7 +77,6 @@ body {
 
 footer {
     background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgba(13, 40, 38, 1) 10%);
-    margin: 0 20%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -85,11 +84,7 @@ footer {
 }
 
 .footer__redes {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
     margin-right: 1.5rem;
-    border-right: 2px groove white;
 }
 
 .footer__titulo {
@@ -112,8 +107,7 @@ footer {
 
 .copyrigth__descripcion {
     color:#e0e0e0;
-    padding: 0 1rem;
-    margin: 0;
+    margin: 4rem 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
@@ -123,7 +117,6 @@ footer {
 
 .main__index {
     background-color: #e0e0e0;
-    margin: 0 20%;
     padding: 0;
 }
 
