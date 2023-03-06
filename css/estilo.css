@@ -131,7 +131,7 @@ footer {
 }
 
 .carrousel__container {
-    height: 7rem;
+    height: 8rem;
     background: black;
     border: 2px solid #1f6555;
 }
@@ -585,7 +585,7 @@ header {
         "header header header"
         ". main aside"
         ". main aside"
-        ". footer . ";
+        ". footer .";
     grid-template-rows: auto 46rem auto 11rem;
     grid-template-columns: 20% 60% 20%;
     justify-content: center;
@@ -604,7 +604,23 @@ header {
 
 .footer__residentevil4remake {
     grid-area: footer;
+    margin: 0;
+    width: 100%;
+
 }
+
+.aside__residentevil {
+    margin-top: 0;
+    grid-area: aside;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: 2px solid black;
+    height: 70%;
+    font-family: 'Cabin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 
 .residentevil__trailer {
     width: 100%;
@@ -788,7 +804,7 @@ label {
 
 @media screen and (max-width: 1024px) {
 
-/*...Mobile Design (860*768)...*/
+/*...Mobile Design...*/
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Hogwarts Legacy...//////////////////////////////////////////////
@@ -834,7 +850,7 @@ label {
 
     .articulo3__imagenes {
         display: flex;
-    flex-direction: column;
+        flex-direction: column;
     }
 
     .articulo4__section2 {
@@ -860,16 +876,16 @@ label {
         flex-flow: row nowrap;
         justify-content: space-between;
     }
-    
+
     .playstation__imagen {
         width: 4rem;
     }
-    
-    
+
+
     .xbox__imagen {
         width: 5rem;
     }
-    
+
     .steam__imagen {
         height: 5rem;
     }
@@ -885,12 +901,25 @@ label {
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////...Index...//////////////////////////////////////////////
+/////////////////////////...Resident Evil 4 Remake Trailer...///////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
+
 @media screen and (max-width:576px) {
+    .trailer__resident__evil__4remake {
+        display: grid;
+        grid-template-areas:
+            "header"
+            "main"
+            "main"
+            "aside"
+            "footer";
+        grid-template-rows: 4.7rem;
+        grid-template-columns: 100%;
 
+    }
 
-
-
+    .aside__residentevil {
+        height: 100%;
+    }
 }
