@@ -20,103 +20,88 @@
 
 <body>
     <header>
-        <nav class=" menu navbar navbar-expand-lg">
+        <nav class="menu navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="menu__logo navbar-brand " href="#">DEMENTESGAMERS</a>
+                <a class="menu__logo navbar-brand me-auto" href="#">DEMENTESGAMERS</a>
                 <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="lista__item"><a href="../index.html" class="item__nombre">Inicio</a></li>
-                        <li class="lista__item"><a href="./mi_cuenta.html" class="item__nombre">Mi cuenta</a></li>
-                        <li class="lista__item"><a href="./sobre-nosotros.html" class="item__nombre">Sobre
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                        <li class="lista__item"><a href="./index.html" class="item__nombre">Inicio</a></li>
+                        <li class="lista__item"><a href="./pages/mi_cuenta.html" class="item__nombre">Mi cuenta</a></li>
+                        <li class="lista__item"><a href="./pages/sobre-nosotros.html" class="item__nombre">Sobre
                                 Nosotros</a> </li>
-                        <li class="lista__item"><a href="./contacto.html" class="item__nombre">Contacto</a></li>
+                        <li class="lista__item"><a href="./pages/contacto.html" class="item__nombre">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main class="main__sobrenosotros">
+    <main class="main__sobrenosotros col-xs-12 col-md-12 col-lg-7 offset-lg-3">
         <section class="sobrenosotros__contenido">
             <h1 class="sobrenosotros__titulo">¿Quienes somos?</h1>
-
-            <img class="sobrenosotros__img" src="../images/quienes_somos.png" alt="¿Quienes somos?">
-
-            <p class="sobrenosotros__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic
-                perferendis perspiciatis quis quae
-                reiciendis sapiente ipsum veniam expedita harum, facilis architecto fuga, in illum esse maiores sunt
-                eaque
-                et!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic perferendis perspiciatis quis quae
-                reiciendis sapiente ipsum veniam expedita harum, facilis architecto fuga, in illum esse maiores sunt
-                eaque
-                et!Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel hic perferendis perspiciatis quis quae
-                reiciendis sapiente ipsum veniam expedita harum, facilis architecto fuga, in illum esse maiores sunt
-                eaque
-                et!</p>
-        </section> 
+            <img class="sobrenosotros__img mx-auto" src="../images/quienes_somos.png" alt="¿Quienes somos?">
+            <p class="sobrenosotros__descripcion text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum, facilis
+                architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum,
+                facilis architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita
+                harum, facilis architecto fuga, in illum esse maiores sunt eaque et!</p>
+        </section>
 
         <hr>
 
-        <section class="equipo">
-            <h2 class="equipo__titulo">Equipo</h2>
+        <section class="equipo mt-5">
+            <h2 class="equipo__titulo text-center">Equipo</h2>
             <div class="equipo__organizacion">
                 <div class="equipo__integrantes">
-                    <img class="diseñador" src="../images/usuario.jpg" alt="Diseñador web">
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore placeat, ex voluptate
-                        laboriosam
-                        atque autem repudiand</p>
-
-                    <img class="periodista" src="../images/usuario.jpg" alt="Periodista">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure, hic dolor cumque quidem vel
-                        eaque
-                
-                    </p>
+                    <img class="diseñador float-start me-3" src="../images/usuario.jpg" alt="Diseñador web">
+                    <p class="float-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore placeat,
+                        ex voluptate laboriosam atque autem repudiand</p>
+                    <img class="periodista float-end ms-3" src="../images/usuario.jpg" alt="Periodista">
+                    <p class="float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure, hic dolor
+                        cumque quidem vel eaque</p>
                 </div>
-            </div>
         </section>
     </main>
 
-
-
-    <footer class="footer">
-        <div class="footer__redes">
-            <p>Redes</p>
-            <div class="vr"></div>
-            <ul class="footer__lista">
-                <li class="footer__item">
-                    <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="item__icon">
-                        <i class="fa-brands fa-instagram">/Dementesgamers</i>
-                    </a>
-                </li>
-
-                <li class="footer__item">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-twitch">/Dementesgamers</i></a>
-                </li>
-                <li class="footer__item">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-twitter">/Dementesgamers</i>
-                    </a>
-                </li>
-            </ul>
+    <footer class="container-fluid">
+        <div class="row justify-content-between footer__redes">
+            <div class="redes col-6 mx-auto mx-md-auto text-center">
+                <p class="footer__titulo">Redes</p>
+                <ul class="footer__lista">
+                    <li class="footer__item">
+                        <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__enlaces">
+                            <i class="fa-brands fa-instagram footer__icono">/Dementesgamers</i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" target="_blank" class="footer__enlaces">
+                            <i class="fa-brands fa-twitch footer__icono">/Dementesgamers</i>
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a href="#" target="_blank" class="footer__enlaces">
+                            <i class="fa-brands fa-twitter footer__icono">/Dementesgamers</i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-6 mx-auto text-center">
+                <p class="copyrigth__descripcion">El nombre Dementesgamers y el logotipo son marcas registradas.
+                    Derechos Reservados © Dementesgamers</p>
+            </div>
         </div>
-
-        <div class="copyrigth">
-            <p class="copyrigth__texto">El nombre Dementesgamers y el logotipo son marcas registradas. Derechos
-                Reservados ©
-                Dementesgamers
-            </p>
-        </div>
-
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-    crossorigin="anonymous"></script>
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
