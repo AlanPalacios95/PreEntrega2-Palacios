@@ -888,7 +888,6 @@ label {
     .analisis__hogwartslegacy {
         display: grid;
         grid-template-areas:
-            "heather"
             "main"
             "main"
             "aside"
@@ -948,7 +947,8 @@ label {
 
     .compras {
         flex-flow: row nowrap;
-        justify-content: space-between;
+        justify-content: space-around;
+
     }
 
     .playstation__imagen {
@@ -972,6 +972,10 @@ label {
         flex: 100%;
     }
 
+    .hogwarts__footer {
+        margin-bottom: -3rem;
+    }
+
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
@@ -983,7 +987,6 @@ label {
     .trailer__resident__evil__4remake {
         display: grid;
         grid-template-areas:
-            "header"
             "main"
             "main"
             "aside"
@@ -1000,5 +1003,17 @@ label {
 
     .footer__redes {
         padding-bottom: 12%;
+    }
+
+    .equipo__integrantes{
+        flex-direction: column;
+    }
+
+    .periodista__descripcion {
+        padding: 3rem;
+    }
+
+    .diseñador__descripcion {
+        padding: 3rem;
     }
 }
