@@ -6,7 +6,7 @@
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
-//////////////////////...Barra de avegacion...//////////////////////////////////////////////
+//////////////////////...Barra de navegacion...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
 
@@ -23,6 +23,7 @@ body {
     margin: 0;
 
 }
+
 
 .container-fluid {
     display: flex;
@@ -69,6 +70,15 @@ body {
     justify-content: center;
     padding: 2rem 0;
     margin: 0;
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////...Nav Responsive...//////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////
+*/
+
+.nav__responsive {
+    display: none;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
@@ -138,7 +148,7 @@ footer {
 
 .card-text {
     text-align: center;
-    font-family: 'Cabin''Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Cabin' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }
@@ -713,8 +723,12 @@ header {
 */
 
 .main__contacto {
+    padding: 0;
+}
+
+.contacto__contenido {
     background-color: #e0e0e0;
-    height: 47rem;
+    height: 40rem;
 }
 
 .contacto__titulo {
@@ -723,36 +737,48 @@ header {
     text-align: center;
 }
 
-form {
+.contacto__grupo {
     display: flex;
-    flex-direction: column;
-    max-width: 400px;
-    margin: 0 auto;
+    flex-direction: row;
+    margin-top: 1rem;
+    justify-content: space-around
 }
 
-.form__grupo {
+.contacto__grupo1 {
     display: flex;
     flex-direction: column;
-    margin-bottom: 20px;
+    row-gap: 4rem;
+}
+
+.grupo__datos {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: space-around;
+}
+
+.contacto__grupo2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    align-items: center;
+}
+
+.grupo__datos--comentarios {
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    width: 15rem;
+    margin: 0;
 }
 
 label {
     margin-bottom: 5px;
 }
 
-input[type="text"],
-select,
-textarea {
-    padding: 10px;
-    border-radius: 5px;
-    border: none;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
-    font-size: 16px;
-    margin-bottom: 10px;
-}
 
 button[type="submit"] {
-    background-color: #007bff;
+    background-color: #32AE91;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
@@ -825,20 +851,49 @@ label {
 
 /*...Mobile Design...*/
 
+
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Hogwarts Legacy...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
 
 @media screen and (max-width:576px) {
+
+    .menu {
+        display: none;
+    }
+
+    .nav__responsive {
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(circle, rgba(2, 6, 6, 1) 0%, rgba(41, 62, 59, 1) 56%);
+    }
+
+    .responsive__contenido {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .responsive__lista {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .responsive__item {
+        display: flex;
+    }
+
     .analisis__hogwartslegacy {
         display: grid;
         grid-template-areas:
-            "header"
+            "heather"
             "main"
             "main"
             "aside"
-            "footer";
+            "footer"
+        ;
         grid-template-rows: 4.7rem;
         grid-template-columns: 100%;
         justify-content: center;
@@ -940,5 +995,10 @@ label {
 
     .aside__residentevil {
         height: 100%;
+    }
+
+
+    .footer__redes {
+        padding-bottom: 12%;
     }
 }

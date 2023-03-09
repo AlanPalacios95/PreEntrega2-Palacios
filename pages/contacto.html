@@ -39,43 +39,71 @@
                 </div>
             </div>
         </nav>
+
+        <nav class="nav__responsive fixed-bottom">
+            <div class="responsive__contenido">
+                <ul class="responsive__lista">
+                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i
+                                class="fa-solid fa-house"></i></a></li>
+                    <li class="responsive__item"><a href="./mi_cuenta.html" class="item__nombre"><i
+                                class="fa-solid fa-user"></i></a></li>
+                    <li class="responsive__item"></i><a href="sobre-nosotros.html" class="item__nombre"><i
+                                class="fa-solid fa-users"></i></a> </li>
+                    <li class="responsive__item"></i><a href="contacto.html" class="item__nombre"><i
+                                class="fa-solid fa-message"></i></a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main class="container-fluid col-xs-12 col-md-12 col-lg-7 offset-lg-3">
+    <main class="main__contacto container col-xs-12 col-md-12 col-lg-7 offset-lg-3">
         <div class="row">
-            <div class="main__contacto">
-                <h2 class="contacto__titulo">Dejanos tu opinion o hacenos una pregunta y te contestaremos de inmediato
-                </h2>
-                <form class="contacto__form">
-                    <div class="form__grupo">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" name="nombre" required>
-                    </div>
-                    <div class="form__grupo">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" id="apellido" name="apellido" required>
-                    </div>
-                    <div class="form__grupo">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form__grupo">
-                        <label for="consola">Consola:</label>
-                        <select id="consola" name="consola">
-                            <option value="">Elige una opción</option>
-                            <option value="playstation">PlayStation</option>
-                            <option value="xbox">Xbox</option>
-                            <option value="nintendo">Nintendo</option>
-                            <option value="pc">PC</option>
-                            <option value="mobile">Mobile</option>
-                        </select>
-                    </div>
-                    <div class="form__grupo">
-                        <label for="comentarios">Comentarios:</label>
-                        <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
-                    </div>
-                    <button type="submit">Enviar</button>
-                </form>
+            <div class="col-12">
+                <div class="contacto__contenido">
+                    <h2 class="contacto__titulo">Dejanos tu opinion o pregunta <br> y te contestaremos de inmediato
+                    </h2>
+                    <form class="contacto__grupo">
+                        <fieldset class="contacto__grupo1">
+                            <legend class="titulo__grupo">Datos Personales</legend>
+                            <div class="grupo__datos">
+                                <label for="nombre">Nombre:</label>
+                                <input type="text" id="nombre" name="nombre" required>
+                            </div>
+                            <div class="grupo__datos">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" id="apellido" name="apellido" required>
+                            </div>
+                            <div class="grupo__datos">
+                                <label for="edad">Edad:</label>
+                                <input type="number" id="edad" name="edad">
+                            </div>
+                            <button type="submit">Enviar</button>
+                        </fieldset>
+
+                        <fieldset class="contacto__grupo2">
+                            <legend>Mensaje</legend>
+                            <div class="grupo__datos">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="grupo__datos">
+                                <label for="consola">Consola:</label>
+                                <select id="consola" name="consola">
+                                    <option value="">Elige una opción</option>
+                                    <option value="playstation">PlayStation</option>
+                                    <option value="xbox">Xbox</option>
+                                    <option value="nintendo">Nintendo</option>
+                                    <option value="pc">PC</option>
+                                    <option value="mobile">Mobile</option>
+                                </select>
+                            </div>
+                            <div class="grupo__datos--comentarios">
+                                <label for="comentarios">Comentarios:</label>
+                                <textarea id="comentarios" name="comentarios" rows="5" required></textarea>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
             </div>
         </div>
     </main>
