@@ -1,0 +1,78 @@
+.aside {
+        margin-top: 0;
+        grid-area: aside;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        color: black;
+        border: 2px solid black;
+        height: 35%;
+        font-family: "Cabin", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        &__titulo {
+            background: black;
+            color: white;
+            text-align: center;
+            font-family: "Cabin", sans-serif;
+            font-weight: 700;
+        }
+        &__content{
+            display: flex;
+            flex-direction: column;
+        }
+        &__ul {
+            list-style-type: none;
+            display: flex;
+            flex-direction: column;
+            font-size: larger;
+            row-gap: 0.5rem;
+            padding: 1rem;
+            font-family: "Cabin", sans-serif;
+            font-weight: 400;
+        }
+        &__portada {
+            width: 100%;
+            border-radius: 10rem;
+            object-fit: cover;
+            margin-bottom: 5rem;
+        }
+        &__img {
+            width: 100%;
+            padding: 1rem;
+        }
+}
+
+.tienda {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    &__enlaces {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-top: 2rem;
+    }
+    &__h3 {
+        background: black;
+        color: white;
+        text-align: center;
+        font-family: "Oswald";
+        font-size: xx-large;
+        margin: 1rem 0;
+    }
+}
+
+.compras {
+    display: flex;
+    flex-flow: column nowrap;
+    &__link {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        flex-direction: column;
+    }
+    &__img {
+        width: 130px;
+        height: 87px;
+    }
+}

@@ -1,0 +1,50 @@
+.main__sobrenosotros {
+    background-color: #e0e0e0;
+    padding-bottom: 2rem;
+}
+
+.sobrenosotros__titulo {
+    font-family: oswalt;
+    font-size: 4rem;
+    text-align: center;
+}
+
+.sobrenosotros__img {
+    width: 100%;
+    object-fit: cover;
+    padding: 0 1rem;
+}
+
+.sobrenosotros__descripcion {
+    margin-top: 2rem;
+    font-size: rem;
+    padding: 0 1rem;
+}
+
+.equipo {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+.diseñador {
+    width: 25%;
+    height: 10rem;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.periodista {
+    width: 25%;
+    height: 10rem;
+    border-radius: 100%;
+    object-fit: cover;
+    padding: 1rem;
+}
+
+.equipo__integrantes {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}

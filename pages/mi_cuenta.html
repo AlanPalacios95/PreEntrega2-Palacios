@@ -20,37 +20,37 @@
 
 <body>
     <header>
-        <nav class=" menu navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="menu__logo navbar-brand " href="../index.html">DEMENTESGAMERS</a>
-                <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="lista__item"><a href="../index.html" class="item__nombre">Inicio</a></li>
-                        <li class="lista__item"><a href="./mi_cuenta.html" class="item__nombre">Mi cuenta</a></li>
-                        <li class="lista__item"><a href="./sobre-nosotros.html" class="item__nombre">Sobre
-                                Nosotros</a> </li>
-                        <li class="lista__item"><a href="./contacto.html" class="item__nombre">Contacto</a></li>
-                    </ul>
+        <nav>
+            <div class="nav__navbar navbar navbar-expand-lg">
+                <div class="nav__div container-fluid">
+                    <a class="nav__a navbar-brand me-auto" href="../index.html">DEMENTESGAMERS</a>
+                    <button class="nav__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="nav__ul navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                            <li class="nav__li"><a href="../index.html" class="nav__link">Inicio</a></li>
+                            <li class="nav__li"><a href="./mi_cuenta.html" class="nav__link">Mi cuenta</a>
+                            </li>
+                            <li class="nav__li"><a href="./sobre-nosotros.html" class="nav__link">Sobre
+                                    Nosotros</a> </li>
+                            <li class="nav__li"><a href="./contacto.html" class="nav__link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
 
-        <nav class="fixed-bottom nav__responsive">
+        <nav class="nav__responsive fixed-bottom">
             <div class="responsive__contenido">
                 <ul class="responsive__lista">
-                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i
-                                class="fa-solid fa-house"></i></a></li>
-                    <li class="responsive__item"><a href="./mi_cuenta.html" class="item__nombre"><i
-                                class="fa-solid fa-user"></i></a></li>
-                    <li class="responsive__item"></i><a href="sobre-nosotros.html" class="item__nombre"><i
-                                class="fa-solid fa-users"></i></a> </li>
-                    <li class="responsive__item"></i><a href="contacto.html" class="item__nombre"><i
-                                class="fa-solid fa-message"></i></a></li>
+                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="responsive__item"><a href="./mi_cuenta.html" class="item__nombre"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="responsive__item"><a href="./sobre-nosotros.html" class="item__nombre"><i class="fa-solid fa-users"></i></a></li>
+                    <li class="responsive__item"><a href="./contacto.html" class="item__nombre"><i class="fa-solid fa-message"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -59,19 +59,19 @@
     <main class="container">
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 offset-lg-3">
-                <h1 class="micuenta__titulo">Bienvenido a esta comunidad</h1>
-                <div class="formulario__registro">
+                <h1 class="mi-cuenta__titulo">Bienvenido a esta comunidad</h1>
+                <div class="mi-cuenta__registro">
                     <h2>Inicio de Sesión</h2>
                     <p>¿Todavia no sos miembro? <a href="#">Haz click aqui</a></p>
                     <div>
                         <form>
-                            <fieldset class="registro">
+                            <fieldset class="mi-cuenta__fieldset">
                                 <legend>Cuenta de Usuario</legend>
                                 <label for="nombre">Usuario</label>
                                 <input type="text" id="nombre">
                                 <label for="contraseña">Contraseña</label>
                                 <input type="password" id="contraseña">
-                                <input class="button__usuario" type="submit" value="Inicio de sesion">
+                                <button type="submit">Inicio de sesion"</button>
                             </fieldset>
                         </form>
                     </div>
@@ -80,35 +80,33 @@
         </div>
     </main>
 
-
-
     <footer class="container-fluid col-xs-12 col-md-12 col-lg-7 offset-lg-3">
-        <div class="row footer__redes justify-content-between align-items-center">
-            <div class="redes col-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6">
                 <div class="col-6">
-                    <p class="footer__titulo text-center">Redes</p>
-                    <ul class="footer__lista">
-                        <li class="footer__item">
-                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-instagram footer__icono">/Dementesgamers</i>
+                    <h4 class="footer__h4 text-center">Redes</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__link"><i
+                                    class="fa-brands fa-instagram footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitch footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitch footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitter footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitter footer__i">/Dementesgamers</i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-6  text-right">
-                <p class="copyrigth__descripcion">El nombre Dementesgamers y el logotipo son marcas registradas.
-                    Derechos Reservados © Dementesgamers</p>
+                <p class="footer__p">El nombre Dementesgamers y el logotipo son marcas registradas.
+                    Derechos Reservados © Dementesgamers</p>i
             </div>
         </div>
     </footer>

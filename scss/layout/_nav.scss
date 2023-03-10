@@ -1,0 +1,28 @@
+.nav__navbar {
+    background-color: black;
+    border: 2px solid white;
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    &__div{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__a {
+        margin-right: auto;
+        color: white;
+        height: 4rem;
+        font-size: 2rem;
+    }
+    &__link {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+    }
+    &__link:hover {
+        color: #32Ae91;
+    }
+    &__button{
+        background-color: #ffffff;
+    }
+}

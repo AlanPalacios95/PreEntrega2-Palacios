@@ -1,0 +1,38 @@
+.hogwartslegacy__body {
+    display: grid;
+    grid-template-areas: "header header header" ". main aside" ". main aside" ". footer . ";
+    grid-template-rows: auto 46rem auto 11rem;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+}
+
+.hogwarts__main {
+    grid-area: main;
+    background-color: #e0e0e0;
+    display: flex;
+    font-family: "Cabin", sans-serif;
+    flex-flow: column nowrap;
+    margin-top: 0;
+    font-weight: 500;
+}
+
+.hogwarts__legacy__titulo {
+    font-size: 3rem;
+    font-family: "Harry Potter", sans-serif;
+}
+
+.hogwarts__legacy {
+    font-size: 2rem;
+    font-family: "Harry Potter", sans-serif;
+    padding-right: 2px;
+}
+
+.hogwarts__footer {
+    grid-area: footer;
+    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgb(13, 40, 38) 10%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 100%;
+}

@@ -1,0 +1,20 @@
+footer {
+    background-color: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgb(13, 40, 38) 10%);
+    &__h4{
+        font-size: 1.5rem;
+        color: #ffff;
+        text-decoration: underline white;
+    }
+    &__ul {
+        list-style-type: none;
+        padding: 0 1rem;
+    }
+    &__link {
+        color: #32ae91;
+        font-size: 1.5rem;
+    }
+    &__p {
+        color: #ffff;
+        padding-left: 2rem;
+    }
+}

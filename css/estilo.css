@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
@@ -9,74 +11,51 @@
 //////////////////////...Barra de navegacion...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
 body {
     height: 100vh;
-    background: linear-gradient(90deg, rgba(18, 79, 69, 1) 0%, rgba(14, 91, 79, 1) 36%, rgba(11, 193, 178, 1) 63%);
+    background: linear-gradient(90deg, rgb(18, 79, 69) 0%, rgb(14, 91, 79) 36%, rgb(11, 193, 178) 63%);
 }
 
-.menu {
+.nav__navbar {
     background-color: black;
     border: 2px solid white;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     padding: 0;
     margin: 0;
-
 }
 
-
-.container-fluid {
+.nav__div {
     display: flex;
     justify-content: space-between;
 }
 
-.menu__logo {
+.nav__a {
     margin-right: auto;
-}
-
-.menu__logo {
     color: white;
     height: 4rem;
     font-size: 2rem;
 }
 
-.logo__nombre {
-    color: white;
-    height: 5rem;
-    font-size: 3rem;
-}
-
-.lista__item {
-    padding: 0 0.5rem;
-}
-
-.item__nombre {
+.nav__link {
     text-decoration: none;
     color: white;
     font-size: 2rem;
+    padding: 0.5rem;
 }
 
-.item__nombre:hover {
+.nav__link:hover {
     color: #32AE91;
     text-decoration: underline;
 }
 
-.button__nav {
+.nav__button {
     background-color: white;
-}
-
-
-.pagination {
-    justify-content: center;
-    padding: 2rem 0;
-    margin: 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Nav Responsive...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
 .nav__responsive {
     display: none;
 }
@@ -85,33 +64,28 @@ body {
 ///////////////////////////////////...Footer...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
 footer {
-    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgba(13, 40, 38, 1) 10%);
-    padding: 0;
+    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgb(13, 40, 38) 10%);
+
 }
 
-.footer__redes {
-    margin-right: 1.5rem;
-}
-
-.footer__titulo {
+.footer__h4 {
     font-size: 1.5rem;
     color: white;
     text-decoration: underline white;
 }
 
-.footer__lista {
+.footer__ul {
     list-style-type: none;
     padding: 0 1rem;
 }
 
-.footer__enlaces {
+.footer__link {
     color: #32AE91;
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
-.copyrigth__descripcion {
+.footer__p {
     color: #e0e0e0;
     padding-left: 2rem;
 }
@@ -120,73 +94,83 @@ footer {
 ///////////////////////////////////...Index...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-.main__index {
+.main__div {
     background-color: #e0e0e0;
     padding: 0;
 }
 
-.menu {
-    padding: 0;
-    margin: 0;
-}
-
-.conteiner__img {
+.item__img {
     height: 26rem;
     width: 100%;
 }
 
-.main__seleccion {
+.carousel__div {
     margin: auto;
 }
 
-.carrousel__container {
+.carousel-item__caption {
     height: 8rem;
     background: black;
     border: 2px solid #1f6555;
 }
 
-.card-text {
+.carousel-item__img {
+    width: 100%;
+    height: 30rem;
+}
+
+.card {
+    width: 100%;
+    height: 11rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card__img {
+    height: 183px;
+    width: 179px;
+    padding: 1rem 0;
+    min-width: 10rem;
+}
+
+.card__body {
+    padding: 1%;
+    width: 23rem;
+}
+
+.card__p {
     text-align: center;
-    font-family: 'Cabin' 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Cabin" "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.indice__contenido {
+.card__link {
+    text-align: center;
+    text-decoration: none;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
 }
 
-.contenedores__contenido {
-    height: 23rem;
-    margin-bottom: 20px;
+.card__link:hover {
+    color: #32AE91;
 }
 
-.indice__card {
-    min-height: 400px;
-}
-
-.indice__img {
-    width: 100%;
-    margin: auto;
-    height: 16rem;
+.pagination {
+    justify-content: center;
+    padding: 2rem 0;
+    margin: 0;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Hogwarts Legacy...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-.analisis__hogwartslegacy {
+.hogwartslegacy__body {
     display: grid;
-    grid-template-areas:
-        "header header header"
-        ". main aside"
-        ". main aside"
-        ". footer . ";
+    grid-template-areas: "header header header" ". main aside" ". main aside" ". footer . ";
     grid-template-rows: auto 46rem auto 11rem;
     grid-template-columns: 20% 60% 20%;
     justify-content: center;
@@ -200,12 +184,11 @@ header {
     grid-area: main;
     background-color: #e0e0e0;
     display: flex;
-    font-family: 'Cabin', sans-serif;
+    font-family: "Cabin", sans-serif;
     flex-flow: column nowrap;
     margin-top: 0;
     font-weight: 500;
 }
-
 
 .articulo1 {
     padding: 2rem;
@@ -220,12 +203,12 @@ header {
 
 .hogwarts__legacy__titulo {
     font-size: 3rem;
-    font-family: 'Harry Potter', sans-serif;
+    font-family: "Harry Potter", sans-serif;
 }
 
 .hogwarts__legacy {
     font-size: 2rem;
-    font-family: 'Harry Potter', sans-serif;
+    font-family: "Harry Potter", sans-serif;
     padding-right: 2px;
 }
 
@@ -235,13 +218,12 @@ header {
     font-weight: 700;
 }
 
-
-.articulo1__portada {
+.articulo1__img {
     width: 100%;
     padding: 0 1rem;
 }
 
-.portada__descripcion {
+.articulo1__p {
     font-size: 1.2rem;
     text-align: center;
     font-weight: 400;
@@ -264,19 +246,19 @@ header {
     padding: 1rem 0;
 }
 
-.articulo2__section2__contenido {
+.articulo2-section2__contenido {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
 }
 
-.articulo2__section2__img {
+.articulo2-section2__img {
     height: 13rem;
     width: 13rem;
 }
 
-.articulo2__section2__descripcion {
+.articulo2-section2__descripcion {
     font-size: 1rem;
     text-align: center;
     font-weight: 500;
@@ -295,35 +277,20 @@ header {
     margin: 2rem 10%;
 }
 
-.articulo3__titulo {
+.articulo3__h4 {
     margin-bottom: 1rem;
     font-weight: 700;
 }
 
-.articulo3__imagenes {
+.articulo3__body {
     display: flex;
-    flex-flow: row nowrap;
-    height: 100%;
-    width: 100%;
+    flex-direction: row;
     column-gap: 0.5rem;
-    padding: 0 0.5rem;
     align-items: flex-end;
     justify-content: space-between;
-    padding: 0px 1rem
 }
 
-.imagenes__titulo {
-    text-align: center;
-}
-
-.imagen {
-    width: 100%;
-    height: 12rem;
-}
-
-.imagen1,
-.imagen2,
-.imagen3 {
+.articulo3__content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -331,24 +298,22 @@ header {
     border: 1px solid black;
     box-shadow: 0 2px 12.5px;
     padding-bottom: 2rem;
-    height: 23rem;
+    height: 20rem;
 }
 
-.imagen__descripcion {
+.articulo3-content__h4 {
+    text-align: center;
+}
+
+.articulo3-content__img {
+    width: 100%;
+    height: 129px;
+}
+
+.articulo3-content__p {
     font-size: 1rem;
     text-align: center;
-    padding: 1rem;
     font-weight: 400;
-}
-
-.imagen__enlace {
-    text-align: center;
-    color: rgb(0, 0, 0);
-}
-
-.imagen__enlace a {
-    text-decoration: underline;
-    color: black;
 }
 
 .articulo4 {
@@ -372,13 +337,12 @@ header {
     flex-direction: row-reverse;
 }
 
-
 .articulo4__nota2 {
     font-size: 1.5rem;
     margin: 0 10%;
 }
 
-.articulo4__section2__contenido {
+.articulo4-section2__content {
     font-size: 1.5rem;
     margin: 0 10%;
     display: flex;
@@ -386,13 +350,13 @@ header {
     align-items: center;
 }
 
-.articulo4__section2__img {
+.articulo4-section2__img {
     height: 13rem;
     width: 13rem;
     margin-left: 0.5rem;
 }
 
-.articulo4__section2__descripcion {
+.articulo4-section2__descripcion {
     font-size: 1rem;
     text-align: center;
     font-weight: 400;
@@ -425,18 +389,18 @@ header {
     padding-top: 6rem;
 }
 
-.carrusel__titulo {
+.eleccion__titulo {
     font-size: 3rem;
     font-weight: 700;
 }
 
-.carrusel {
+.eleccion__body {
     display: flex;
     max-width: 100%;
     padding: 1rem;
 }
 
-.carrusel__contenido {
+.eleccion__content {
     border: 1px solid black;
     border-radius: 2px;
     display: flex;
@@ -444,19 +408,19 @@ header {
     transition: 0.5s;
 }
 
-.carrusel__contenido img {
+.eleccion__img {
     transition: 0.5%;
     width: 100%;
     height: 35rem;
     object-fit: cover;
 }
 
-.imagen__contenedor {
+.eleccion__div {
     position: relative;
     display: inline-block;
 }
 
-.imagen__texto {
+.eleccion__descripcion {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -470,17 +434,15 @@ header {
     transition: opacity 0.3s ease-in-out;
 }
 
-.imagen__contenedor:hover .imagen__texto {
+.eleccion__descripcion:hover {
     opacity: 1;
 }
 
-.carrusel__contenido:hover {
+.eleccion__content:hover {
     flex: 3;
 }
 
-
 /*...Aside de Hogwarts Legacy..*/
-
 .aside {
     margin-top: 0;
     grid-area: aside;
@@ -490,41 +452,41 @@ header {
     color: black;
     border: 2px solid black;
     height: 35%;
-    font-family: 'Cabin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Cabin", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .aside__titulo {
     background: black;
     color: white;
     text-align: center;
-    font-family: 'Cabin', sans-serif;
+    font-family: "Cabin", sans-serif;
     font-weight: 700;
 }
 
-.aside__contenido {
+.aside__content {
     display: flex;
     flex-direction: column;
 }
 
-.aside__lista {
+.aside__ul {
     list-style-type: none;
     display: flex;
     flex-direction: column;
     font-size: larger;
     row-gap: 0.5rem;
     padding: 1rem;
-    font-family: 'Cabin', sans-serif;
+    font-family: "Cabin", sans-serif;
     font-weight: 400;
 }
 
-.portada {
+.aside__portada {
     width: 100%;
     border-radius: 10rem;
     object-fit: cover;
     margin-bottom: 5rem;
 }
 
-.imagen__portada {
+.aside__img {
     width: 100%;
     padding: 1rem;
 }
@@ -540,63 +502,39 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    margin-top: 2rem
+    margin-top: 2rem;
+}
+
+.tienda__h3 {
+    background: black;
+    color: white;
+    text-align: center;
+    font-family: "Oswald";
+    font-size: xx-large;
+    margin: 1rem 0;
 }
 
 .compras {
     display: flex;
     flex-flow: column nowrap;
-
 }
 
-.tiendas__titulo {
-    background: black;
-    color: white;
-    text-align: center;
-    font-family: 'Oswald';
-    font-size: xx-large;
-    margin: 1rem 0;
-}
-
-.playstation {
+.compras__link {
     display: flex;
     align-items: center;
     padding: 2rem;
     flex-direction: column;
 }
 
-.playstation__imagen {
-    width: 7rem;
-}
-
-.xbox {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 2rem;
-}
-
-.xbox__imagen {
-    width: 8rem;
-}
-
-.steam {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    padding: 2rem;
-}
-
-.steam__imagen {
-    height: 7rem;
+.compras__img {
+    width: 130px;
+    height: 87px;
 }
 
 /*...Footer...*/
 .hogwarts__footer {
     grid-area: footer;
-    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgba(13, 40, 38, 1) 10%);
+    background: linear-gradient(0deg, rgb(13, 42, 40) 0%, rgb(13, 40, 38) 10%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -608,37 +546,32 @@ header {
 /////////////////////////...Resident Evil 4 Remake Trailer...///////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-.trailer__resident__evil__4remake {
+.trailer-resident-evil4-remake {
     display: grid;
-    grid-template-areas:
-        "header header header"
-        ". main aside"
-        ". main aside"
-        ". footer .";
+    grid-template-areas: "header header header" ". main aside" ". main aside" ". footer .";
     grid-template-rows: auto 46rem auto 11rem;
     grid-template-columns: 20% 60% 20%;
     justify-content: center;
 }
 
-.resident__evil__4remake {
+.resident-evil4-remake {
     grid-area: main;
     background-color: #e0e0e0;
     display: flex;
-    font-family: 'Cabin', sans-serif;
+    font-family: "Cabin", sans-serif;
     flex-flow: column nowrap;
     margin-top: 0;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.footer__residentevil4remake {
+.resident-evil4-remake__footer {
     grid-area: footer;
     margin: 0;
     width: 100%;
-
 }
 
-.aside__residentevil {
+.resident-evil4-remake__aside {
     margin-top: 0;
     grid-area: aside;
     background-color: white;
@@ -647,17 +580,15 @@ header {
     color: black;
     border: 2px solid black;
     height: 70%;
-    font-family: 'Cabin', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: "Cabin", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
-
-.residentevil__trailer {
+.resident-evil4-remake__trailer {
     width: 100%;
     height: 33rem;
 }
 
 .resident__evil__4remake__rumores {
-
     padding: 1rem 20%;
 }
 
@@ -665,25 +596,24 @@ header {
 ///////////////////////////////////...Sobre Nosotros.../////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-.main__sobrenosotros {
+.main__sobre-nosotros {
     background-color: #e0e0e0;
     padding-bottom: 2rem;
 }
 
-.sobrenosotros__titulo {
+.main__h1 {
     font-family: oswalt;
     font-size: 4rem;
     text-align: center;
 }
 
-.sobrenosotros__img {
+.main__img {
     width: 100%;
     object-fit: cover;
     padding: 0 1rem;
 }
 
-.sobrenosotros__descripcion {
+.main__p {
     margin-top: 2rem;
     font-size: rem;
     padding: 0 1rem;
@@ -695,15 +625,7 @@ header {
     align-items: center;
 }
 
-.diseñador {
-    width: 25%;
-    height: 10rem;
-    border-radius: 100%;
-    object-fit: cover;
-    padding: 1rem;
-}
-
-.periodista {
+.equipo__img {
     width: 25%;
     height: 10rem;
     border-radius: 100%;
@@ -721,50 +643,59 @@ header {
 ///////////////////////////////////...Contacto...///////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
 .main__contacto {
     padding: 0;
 }
 
-.contacto__contenido {
+.main__contenido {
     background-color: #e0e0e0;
     height: 40rem;
 }
 
-.contacto__titulo {
+.main__h1 {
     font-weight: 900;
-    font-family: 'Cabin', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
     text-align: center;
 }
 
-.contacto__grupo {
+.main__grupo1 {
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
-.contacto__grupo1 {
+.grupo1 {
     display: flex;
     flex-direction: column;
     row-gap: 4rem;
 }
 
-.grupo__datos {
+.grupo1__datos {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
     justify-content: space-around;
 }
 
-.contacto__grupo2 {
+.grupo2 {
     display: flex;
     flex-direction: column;
+    row-gap: 3rem;
+}
+
+.grupo2__datos {
+    text-align: center;
+}
+
+.grupo2__email {
+    display: flex;
+    flex-direction: row;
     row-gap: 4rem;
     align-items: center;
 }
 
-.grupo__datos--comentarios {
+.grupo2__msj{
     display: flex;
     flex-direction: column;
     height: 10rem;
@@ -776,43 +707,42 @@ label {
     margin-bottom: 5px;
 }
 
-
-button[type="submit"] {
+button{
     background-color: #32AE91;
     color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+    margin: 0.5rem;
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Mi Cuenta.../////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-.micuenta__titulo {
+.mi-cuenta__titulo {
     font-size: 4rem;
     text-align: center;
-    font-family: 'Cabin', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: "Cabin", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: black;
     font-weight: 900;
     text-shadow: -3px 5px 2px white;
     padding: 1rem 0;
 }
 
-.formulario__registro {
+.mi-cuenta__registro {
     background-color: aliceblue;
     width: 33rem;
     height: 23rem;
     margin: 2rem auto;
     border: 2px solid black;
-    box-shadow: 0 5px 10px 3px rgb(0 0 0);
+    box-shadow: 0 5px 10px 3px rgb(0, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.registro {
+.mi-cuenta__fieldset {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -850,23 +780,19 @@ label {
 @media screen and (max-width: 1024px) {
 
 /*...Mobile Design...*/
-
-
 /*//////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////...Hogwarts Legacy...//////////////////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-@media screen and (max-width:576px) {
-
-    .menu {
+@media screen and (max-width: 576px) {
+    .nav__navbar {
         display: none;
     }
 
     .nav__responsive {
         display: flex;
         justify-content: center;
-        background: radial-gradient(circle, rgba(2, 6, 6, 1) 0%, rgba(41, 62, 59, 1) 56%);
+        background: radial-gradient(circle, rgb(2, 6, 6) 0%, rgb(41, 62, 59) 56%);
     }
 
     .responsive__contenido {
@@ -885,25 +811,20 @@ label {
         display: flex;
     }
 
-    .analisis__hogwartslegacy {
+    .hogwartslegacy__body {
         display: grid;
-        grid-template-areas:
-            "main"
-            "main"
-            "aside"
-            "footer"
-        ;
+        grid-template-areas: "main" "main" "aside" "footer";
         grid-template-rows: 4.7rem;
         grid-template-columns: 100%;
         justify-content: center;
     }
 
-    .hogwarts__legacy__titulo {
+    .articulo1__titulo {
         font-size: 2rem;
-        font-family: 'Harry Potter', sans-serif;
+        font-family: "Harry Potter", sans-serif;
     }
 
-    .portada__descripcion {
+    .articulo1__p {
         font-size: 1rem;
         text-align: center;
         font-weight: 400;
@@ -914,14 +835,13 @@ label {
         padding: 1rem 0;
         flex-direction: column;
         align-items: center;
-
     }
 
-    .articulo2__section2__img {
+    .articulo2-section2__img {
         margin: 0 25%;
     }
 
-    .articulo3__imagenes {
+    .articulo3__body {
         display: flex;
         flex-direction: column;
     }
@@ -935,11 +855,11 @@ label {
         height: 100%;
     }
 
-    .aside__contenido {
+    .aside__content {
         flex-direction: row;
     }
 
-    .imagen__portada {
+    .aside__portada {
         width: 67%;
         padding: 1rem;
         margin: 0 2rem;
@@ -948,21 +868,11 @@ label {
     .compras {
         flex-flow: row nowrap;
         justify-content: space-around;
-
     }
 
-    .playstation__imagen {
+    .compras__img {
         width: 4rem;
-    }
-
-
-    .xbox__imagen {
-        width: 5rem;
-    }
-
-    .steam__imagen {
-        height: 5rem;
-    }
+    } 
 
     .footer__enlaces {
         font-size: 1rem;
@@ -975,45 +885,32 @@ label {
     .hogwarts__footer {
         margin-bottom: -3rem;
     }
-
 }
 
 /*//////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////...Resident Evil 4 Remake Trailer...///////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////////////////
 */
-
-@media screen and (max-width:576px) {
-    .trailer__resident__evil__4remake {
+@media screen and (max-width: 576px) {
+    .trailer-resident-evil4-remake {
         display: grid;
-        grid-template-areas:
-            "main"
-            "main"
-            "aside"
-            "footer";
+        grid-template-areas: "main" "main" "aside" "footer";
         grid-template-rows: 4.7rem;
         grid-template-columns: 100%;
-
     }
 
-    .aside__residentevil {
+    .resident-evil4-remake__aside {
         height: 100%;
     }
 
-
-    .footer__redes {
-        padding-bottom: 12%;
-    }
-
-    .equipo__integrantes{
+    .equipo__integrantes {
         flex-direction: column;
     }
 
-    .periodista__descripcion {
+    .equipo__p {
         padding: 3rem;
     }
 
-    .diseñador__descripcion {
-        padding: 3rem;
-    }
 }
+
+/*# sourceMappingURL=estilo.css.map */

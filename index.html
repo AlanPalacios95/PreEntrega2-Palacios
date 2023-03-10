@@ -21,22 +21,22 @@
 <body>
     <header>
         <nav>
-            <div class="menu navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <a class="menu__logo navbar-brand me-auto" href="./index.html">DEMENTESGAMERS</a>
-                    <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse"
+            <div class="nav__navbar navbar navbar-expand-lg">
+                <div class="nav__div container-fluid">
+                    <a class="nav__a navbar-brand me-auto" href="./index.html">DEMENTESGAMERS</a>
+                    <button class="nav__button navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
                         aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarText">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
-                            <li class="lista__item"><a href="./index.html" class="item__nombre">Inicio</a></li>
-                            <li class="lista__item"><a href="./pages/mi_cuenta.html" class="item__nombre">Mi cuenta</a>
+                        <ul class="nav__ul navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                            <li class="nav__li"><a href="./index.html" class="nav__link">Inicio</a></li>
+                            <li class="nav__li"><a href="./pages/mi_cuenta.html" class="nav__link">Mi cuenta</a>
                             </li>
-                            <li class="lista__item"><a href="./pages/sobre-nosotros.html" class="item__nombre">Sobre
+                            <li class="nav__li"><a href="./pages/sobre-nosotros.html" class="nav__link">Sobre
                                     Nosotros</a> </li>
-                            <li class="lista__item"><a href="./pages/contacto.html" class="item__nombre">Contacto</a>
+                            <li class="nav__li"><a href="./pages/contacto.html" class="nav__link">Contacto</a>
                             </li>
                         </ul>
                     </div>
@@ -47,14 +47,10 @@
         <nav class="fixed-bottom nav__responsive">
             <div class="responsive__contenido">
                 <ul class="responsive__lista">
-                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i
-                                class="fa-solid fa-house"></i></a></li>
-                    <li class="responsive__item"><a href="./pages/mi_cuenta.html" class="item__nombre"><i
-                                class="fa-solid fa-user"></i></a></li>
-                    <li class="responsive__item"></i><a href="./pages/sobre-nosotros.html" class="item__nombre"><i
-                                class="fa-solid fa-users"></i></a> </li>
-                    <li class="responsive__item"></i><a href="./pages/contacto.html" class="item__nombre"><i
-                                class="fa-solid fa-message"></i></a></li>
+                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="responsive__item"><a href="./pages/mi_cuenta.html" class="item__nombre"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="responsive__item"><a href="./pages/sobre-nosotros.html" class="item__nombre"><i class="fa-solid fa-users"></i></a></li>
+                    <li class="responsive__item"><a href="./pages/contacto.html" class="item__nombre"><i class="fa-solid fa-message"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -62,10 +58,10 @@
 
     <main class="container-fluid">
         <div class="row">
-            <div class="main__index col-xs-12 col-sm-12 offset-md-3 col-md-7 ">
+            <div class="main__div col-xs-12 col-sm-12 offset-md-3 col-md-7">
                 <section class="conteiner-fluid">
                     <div id="carouselExampleCaptions" class="row carousel slide">
-                        <div class="carousel-indicators main__seleccion">
+                        <div class="carousel-indicators carousel__div">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -75,36 +71,41 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <img class="conteiner__img"
+                                <img class="carousel-item__img"
                                     src="https://assets.nuuvem.com/image/upload/v1/products/6307dc85ba5b7c0014a7501e/sharing_images/pt5vf76udky6sicrf45o.jpg"
                                     class="d-block w-100" alt="Hogwarts Legacy">
-                                <div class="carousel-caption carrousel__container">
-                                    <h5 class="conteiner__titulo"><b>Hogwart Legacy</b></h5>
-                                    <p class="conteiner__descripcion">El nuevo titulo de Warner Bross supera todas las
-                                        espectativas <br>
+                                <div class="carousel-caption carousel-item__caption">
+                                    <h5 class="carousel-item__h5"><b>Hogwart Legacy</b></h5>
+                                    <p class="carousel-item__p">El nuevo titulo de Warner Bross supera todas
+                                        las espectativas
+                                        <br>
                                         <a href="./pages/hogwartslegacy.html" target="_blank"
-                                            class="carousel__enlace">Ver mas</a>
+                                            class="carousel-item__link">Ver mas</a>
                                     </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="conteiner__img"
+                                <img class="carousel-item__img"
                                     src="https://www.residentevil.com/re4/assets/images/common/share-re.png"
                                     class="d-block w-100" alt="Resident Evil">
-                                <div class="carousel-caption carrousel__container">
-                                    <h5 class="conteiner__titulo"><b>Resident Evil 4 Remake</b></h5>
-                                    <p class="conteiner__descripcion">Un nuevo trailer aumenta el hype <br>
+                                <div class="carousel-caption carousel-item__caption">
+                                    <h5 class="carousel-item__h5"><b>Resident Evil 4 Remake</b></h5>
+                                    <p class="carousel-item__p">Un nuevo trailer aumenta el hype
+                                        <br>
                                         <a href="./pages/resident-evil4-remake-trailer.html" target="_blank">Ver mas</a>
-                                    </p>
                                 </div>
                             </div>
                             <div class="carousel-item">
-                                <img class="conteiner__img"
+                                <img class="carousel-item__img"
                                     src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
                                     class="d-block w-100" alt="Atomic Heart">
-                                <div class="carousel-caption carrousel__container">
-                                    <h5 class="conteiner__titulo"><b>Amotic Heart</b></h5>
-                                    <p class="conteiner__descripcion">La nueva bomba de Microsoft</p>
+                                <div class="carousel-caption carousel-item__caption">
+                                    <h5 class="carousel-item__h5"><b>Amotic Heart</b></h5>
+                                    <p class="carousel-item__p">La nueva bomba de Microsoft
+                                        <br>
+                                        <a href="./pages/hogwartslegacy.html" target="_blank"
+                                            class="carousel-item__link">Ver mas</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -121,42 +122,41 @@
                     </div>
                 </section>
 
-                <section class="container-fluid indice">
-                    <div class="row justify-content-center align-items-center indice__contenido">
-                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contenedores__contenido">
-                            <img class="indice__img"
-                                src="https://cdn.akamai.steamstatic.com/steam/apps/990080/capsule_616x353.jpg?t=1676412613"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Hogwarts Legacy retrasa su lanzamiento en PS4 y Xbox One</p>
+                <section class="container-fluid">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/990080/capsule_616x353.jpg?t=1676412613"
+                                class="card__img" alt="...">
+                            <div class="card__body">
+                                <h2 class="card__p">Hogwarts Legacy retrasa su lanzamiento en PS4 y Xbox One</h2>
+                                <a href="#" class="card__link">Seguir leyendo..</a>
                             </div>
                         </div>
 
-                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contenedores__contenido">
-                            <img class="indice__img"
-                                src="https://sm.ign.com/ign_es/cover/r/resident-e/resident-evil-4-remake_z3ku.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Se revela el posible tamaño de Resident Evil 4 Remake</p>
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://sm.ign.com/ign_es/cover/r/resident-e/resident-evil-4-remake_z3ku.jpg"
+                                class="card__img" alt="...">
+                            <div class="card__body">
+                                <h2 class="card__p">Se revela el posible tamaño de Resident Evil 4 Remake</h2>
+                                <a href="#" class="card__link">Seguir leyendo..</a>
                             </div>
                         </div>
 
-                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contenedores__contenido">
-                            <img class="indice__img"
-                                src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/03/06/16781076690989.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">¿Un nuevo Dragon Ball Tenckaichi 4?</p>
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2023/03/06/16781076690989.jpg"
+                                class="card__img" alt="...">
+                            <div class="card__body">
+                                <h2 class="card__p">¿Un nuevo Dragon Ball Tenckaichi 4?</h2>
+                                <a href="#" class="card__link">Seguir leyendo..</a>
                             </div>
                         </div>
 
-                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6 contenedores__contenido">
-                            <img class="indice__img"
-                                src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
-                                class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <p class="card-text">Ucrania pide cancelar Atomic Heart</p>
-                                <a href=""></a>
+                        <div class="card col-12 col-sm-12 col-md-6 col-lg-6">
+                            <img src="https://assets-prd.ignimgs.com/2022/11/06/atomic-heart-button-fin-1667702670613.jpg"
+                                class="card__img" alt="...">
+                            <div class="card__body">
+                                <h2 class="card__p">Ucrania pide cancelar Atomic Heart</h2>
+                                <a href="#" class="card__link">Seguir leyendo..</a>
                             </div>
                         </div>
                     </div>
@@ -182,38 +182,38 @@
     </main>
 
     <footer class="container-fluid col-xs-12 col-md-12 col-lg-7 offset-lg-3">
-        <div class="row footer__redes justify-content-between align-items-center">
-            <div class="redes col-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6">
                 <div class="col-6">
-                    <p class="footer__titulo text-center">Redes</p>
-                    <ul class="footer__lista">
-                        <li class="footer__item">
-                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-instagram footer__icono">/Dementesgamers</i>
+                    <h4 class="footer__h4 text-center">Redes</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__link"><i
+                                    class="fa-brands fa-instagram footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitch footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitch footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitter footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitter footer__i">/Dementesgamers</i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-6  text-right">
-                <p class="copyrigth__descripcion">El nombre Dementesgamers y el logotipo son marcas registradas.
-                    Derechos Reservados © Dementesgamers</p>
+                <p class="footer__p">El nombre Dementesgamers y el logotipo son marcas registradas.
+                    Derechos Reservados © Dementesgamers</p>i
             </div>
         </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
 </body>
-
 </html>

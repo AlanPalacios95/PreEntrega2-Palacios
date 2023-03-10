@@ -1,0 +1,45 @@
+.trailer-resident-evil4-remake {
+    display: grid;
+    grid-template-areas: "header header header" ". main aside" ". main aside" ". footer .";
+    grid-template-rows: auto 46rem auto 11rem;
+    grid-template-columns: 20% 60% 20%;
+    justify-content: center;
+}
+
+.resident-evil4-remake {
+    grid-area: main;
+    background-color: #e0e0e0;
+    display: flex;
+    font-family: "Cabin", sans-serif;
+    flex-flow: column nowrap;
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.resident-evil4-remake__footer {
+    grid-area: footer;
+    margin: 0;
+    width: 100%;
+}
+
+.resident-evil4-remake__aside {
+    margin-top: 0;
+    grid-area: aside;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    color: black;
+    border: 2px solid black;
+    height: 70%;
+    font-family: "Cabin", Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.resident-evil4-remake__trailer {
+    width: 100%;
+    height: 33rem;
+}
+
+.resident-evil4-remake__rumores {
+    padding: 1rem 20%;
+}

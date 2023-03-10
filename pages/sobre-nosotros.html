@@ -20,22 +20,26 @@
 
 <body>
     <header>
-        <nav class=" menu navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="menu__logo navbar-brand " href="../index.html">DEMENTESGAMERS</a>
-                <button class=" button__nav navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="lista__item"><a href="../index.html" class="item__nombre">Inicio</a></li>
-                        <li class="lista__item"><a href="./mi_cuenta.html" class="item__nombre">Mi cuenta</a></li>
-                        <li class="lista__item"><a href="./sobre-nosotros.html" class="item__nombre">Sobre
-                                Nosotros</a> </li>
-                        <li class="lista__item"><a href="./contacto.html" class="item__nombre">Contacto</a></li>
-                    </ul>
+        <nav>
+            <div class="nav__navbar navbar navbar-expand-lg">
+                <div class="nav__div container-fluid">
+                    <a class="nav__a navbar-brand me-auto" href="../index.html">DEMENTESGAMERS</a>
+                    <button class="nav__button navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="nav__ul navbar-nav ms-auto mb-2 mb-lg-0 fs-4">
+                            <li class="nav__li"><a href="../index.html" class="nav__link">Inicio</a></li>
+                            <li class="nav__li"><a href="./mi_cuenta.html" class="nav__link">Mi cuenta</a>
+                            </li>
+                            <li class="nav__li"><a href="./sobre-nosotros.html" class="nav__link">Sobre
+                                    Nosotros</a> </li>
+                            <li class="nav__li"><a href="./contacto.html" class="nav__link">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -43,76 +47,79 @@
         <nav class="nav__responsive fixed-bottom">
             <div class="responsive__contenido">
                 <ul class="responsive__lista">
-                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i
-                                class="fa-solid fa-house"></i></a></li>
-                    <li class="responsive__item"><a href="./mi_cuenta.html" class="item__nombre"><i
-                                class="fa-solid fa-user"></i></a></li>
-                    <li class="responsive__item"></i><a href="sobre-nosotros.html" class="item__nombre"><i
-                                class="fa-solid fa-users"></i></a> </li>
-                    <li class="responsive__item"></i><a href="contacto.html" class="item__nombre"><i
-                                class="fa-solid fa-message"></i></a></li>
+                    <li class="responsive__item"><a href="../index.html" class="item__nombre"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="responsive__item"><a href="./mi_cuenta.html" class="item__nombre"><i class="fa-solid fa-user"></i></a></li>
+                    <li class="responsive__item"><a href="./sobre-nosotros.html" class="item__nombre"><i class="fa-solid fa-users"></i></a></li>
+                    <li class="responsive__item"><a href="./contacto.html" class="item__nombre"><i class="fa-solid fa-message"></i></a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="main__sobrenosotros col-xs-12 col-md-12 col-lg-7 offset-lg-3">
-        <section class="sobrenosotros__contenido">
-            <h1 class="sobrenosotros__titulo">¿Quienes somos?</h1>
-            <img class="sobrenosotros__img mx-auto" src="../images/quienes_somos.png" alt="¿Quienes somos?">
-            <p class="sobrenosotros__descripcion text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum, facilis
-                architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur adipisicing
-                elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum,
-                facilis architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur
-                adipisicing elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita
-                harum, facilis architecto fuga, in illum esse maiores sunt eaque et!</p>
-        </section>
+    <main class="col-xs-12 col-md-12 col-lg-7 offset-lg-3">
+        <div class="main__sobre-nosotros">
+            <section class="main__content">
+                <h1 class="main__h1">¿Quienes somos?</h1>
+                <img class="main__img mx-auto" src="../images/quienes_somos.png" alt="¿Quienes somos?">
+                <p class="main__p text-center">Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit.
+                    Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum, facilis
+                    architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur
+                    adipisicing
+                    elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam expedita harum,
+                    facilis architecto fuga, in illum esse maiores sunt eaque et!Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Vel hic perferendis perspiciatis quis quae reiciendis sapiente ipsum veniam
+                    expedita
+                    harum, facilis architecto fuga, in illum esse maiores sunt eaque et!</p>
+            </section>
 
-        <hr>
+            <hr>
 
-        <section class="equipo mt-5">
-            <h2 class="equipo__titulo text-center">Equipo</h2>
-            <div class="equipo__organizacion">
-                <div class="equipo__integrantes">
-                    <img class="diseñador float-start me-3" src="../images/usuario.jpg" alt="Diseñador web">
-                    <p class="diseñador__descripcion float-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore placeat,
-                        ex voluptate laboriosam atque autem repudiand</p>
-                    <img class="periodista float-end ms-3" src="../images/usuario.jpg" alt="Periodista">
-                    <p class="periodista__descripcion float-end">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et iure, hic dolor
-                        cumque quidem vel eaque</p>
+            <section class="equipo mt-5">
+                <h2 class="equipo__h2 text-center">Equipo</h2>
+                <div class="equipo__organizacion">
+                    <div class="equipo__integrantes">
+                        <img class="equipo__img float-start me-3" src="../images/usuario.jpg" alt="Diseñador web">
+                        <p class="equipo__p float-start">Lorem ipsum dolor sit amet consectetur,
+                            adipisicing elit. Inventore placeat,
+                            ex voluptate laboriosam atque autem repudiand</p>
+                        <img class="equipo__img float-end ms-3" src="../images/usuario.jpg" alt="Periodista">
+                        <p class="equipo__p float-end">Lorem ipsum dolor sit amet consectetur adipisicing
+                            elit. Et iure, hic dolor
+                            cumque quidem vel eaque</p>
+                    </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     </main>
 
     <footer class="container-fluid col-xs-12 col-md-12 col-lg-7 offset-lg-3">
-        <div class="row footer__redes justify-content-between align-items-center">
-            <div class="redes col-6">
+        <div class="row justify-content-between align-items-center">
+            <div class="col-6">
                 <div class="col-6">
-                    <p class="footer__titulo text-center">Redes</p>
-                    <ul class="footer__lista">
-                        <li class="footer__item">
-                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-instagram footer__icono">/Dementesgamers</i>
+                    <h4 class="footer__h4 text-center">Redes</h4>
+                    <ul class="footer__ul">
+                        <li class="footer__li">
+                            <a href="https://www.instagram.com/dementesgamers/" target="_blank" class="footer__link"><i
+                                    class="fa-brands fa-instagram footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitch footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitch footer__i">/Dementesgamers</i>
                             </a>
                         </li>
-                        <li class="footer__item">
-                            <a href="#" target="_blank" class="footer__enlaces">
-                                <i class="fa-brands fa-twitter footer__icono">/Dementesgamers</i>
+                        <li class="footer__li">
+                            <a href="#" target="_blank" class="footer__link">
+                                <i class="fa-brands fa-twitter footer__i">/Dementesgamers</i>
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
             <div class="col-6  text-right">
-                <p class="copyrigth__descripcion">El nombre Dementesgamers y el logotipo son marcas registradas.
-                    Derechos Reservados © Dementesgamers</p>
+                <p class="footer__p">El nombre Dementesgamers y el logotipo son marcas registradas.
+                    Derechos Reservados © Dementesgamers</p>i
             </div>
         </div>
     </footer>

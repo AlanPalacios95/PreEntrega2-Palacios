@@ -1,0 +1,60 @@
+main {
+    &__contacto {
+        padding: 0;
+
+        &__contenido {
+            background-color: #e0e0e0;
+            height: 40rem;
+        }
+
+        &__h1 {
+            font-weight: 900;
+            font-family: "Cabin", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            text-align: center;
+        }
+
+        &__grupo1 {
+            display: flex;
+            flex-direction: row;
+            margin-top: 1rem;
+            justify-content: space-around;
+        }
+    }
+}
+
+.grupo1 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4rem;
+    &__display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-content: space-around;
+}
+
+.grupo2 {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    &__grupo2__datos {
+        text-align: center;
+    }
+    &__email {
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+        align-items: center;
+    }
+
+    &__msj {
+        display: flex;
+        flex-direction: column;
+        height: 10rem;
+        width: 15rem;
+        margin: 0;
+    }
+}
+
+label {
+    margin-bottom: 5px;
+}
