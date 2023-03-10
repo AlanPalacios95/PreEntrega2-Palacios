@@ -1,0 +1,149 @@
+@media screen and (max-width: 576px) {
+    .nav__navbar {
+        display: none;
+    }
+
+    .nav__responsive {
+        display: flex;
+        justify-content: center;
+        background: radial-gradient(circle, rgb(2, 6, 6) 0%, rgb(41, 62, 59) 56%);
+        align-items: flex-end;
+        height: 4rem;
+    }
+    
+
+    .responsive__content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .responsive__ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        column-gap: 4rem;
+    }
+
+    .responsive__item {
+        display: flex;
+    }
+
+    .item__icon {
+        color: white;
+        font-size: 2rem;
+    }
+
+    .hogwartslegacy__body {
+        display: grid;
+        grid-template-areas: "main" "main" "aside" "footer";
+        grid-template-rows: 4.7rem;
+        grid-template-columns: 100%;
+        justify-content: center;
+    }
+
+    .articulo1__titulo {
+        font-size: 2rem;
+        font-family: "Harry Potter", sans-serif;
+    }
+
+    .articulo1__p {
+        font-size: 1rem;
+        text-align: center;
+        font-weight: 400;
+    }
+
+    .articulo2__section2 {
+        display: flex;
+        padding: 1rem 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articulo2-section2__img {
+        margin: 0 25%;
+    }
+
+    .articulo3__body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .articulo4__section2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .aside {
+        height: 100%;
+    }
+
+    .aside__content {
+        flex-direction: row;
+    }
+
+    .aside__portada {
+        width: 67%;
+        padding: 1rem;
+        margin: 0 2rem;
+    }
+
+    .compras {
+        flex-flow: row nowrap;
+        justify-content: space-around;
+    }
+
+    .compras__img {
+        width: 4rem;
+    } 
+
+    .footer__enlaces {
+        font-size: 1rem;
+    }
+
+    .carrusel__contenido:hover {
+        flex: 100%;
+    }
+
+    .hogwarts__footer {
+        margin-bottom: -3rem;
+    }
+
+    .trailer-resident-evil4-remake {
+        display: grid;
+        grid-template-areas: "main" "main" "aside" "footer";
+        grid-template-rows: 4.7rem;
+        grid-template-columns: 100%;
+    }
+
+    .resident-evil4-remake__aside {
+        height: 100%;
+    }
+
+    .equipo__integrantes {
+        flex-direction: column;
+    }
+
+    .equipo__p {
+        padding: 3rem;
+    }
+    .main__content {
+        height: 74rem;
+        &__h1 {
+            font-size: 3rem;
+        }
+        &__grupo1 {
+            flex-direction: column-reverse;
+        }
+        &__grupo2 {
+            flex-direction: column;
+            align-items: center;
+        }    
+    }
+    
+    
+    .grupo2{ 
+        align-items: center;
+    }
+    
+
+}
