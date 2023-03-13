@@ -1,15 +1,29 @@
-@import './abstracts/mixins.scss';
-@import './base/responsive.scss';
-@import './base/reset';
-@import './components/notas';
-@import './components/buttons.scss';
-@import './components/eleccion.scss';
-@import './layout/nav';
-@import './layout/aside.scss';
-@import './layout/footer';
-@import './pages/index';
-@import './pages/contacto.scss';
-@import './pages/hogwartslegacy.scss';
-@import './pages/mi-cuenta.scss';
-@import './pages/resident-evil4-remake.scss';
-@import '/pages/sobre-nosotros.scss';
+@import "./abstracts/_mixins.scss";
+@import "./base/_reset";
+@import "./components/_notas";
+@import "./components/_buttons.scss";
+@import "./components/_eleccion.scss";
+@import "./layout/_nav";
+@import "./layout/_aside.scss";
+@import "./layout/_footer";
+@import "./pages/_index";
+@import "./pages/_contacto.scss";
+@import "./pages/_hogwartslegacy.scss";
+@import "./pages/_mi-cuenta.scss";
+@import "./pages/_resident-evil4-remake.scss";
+@import "./pages/_sobre-nosotros.scss";
+@import "./base/_responsive.scss";
+
+body {
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(18, 79, 69) 0%, rgb(14, 91, 79) 36%, rgb(11, 193, 178) 63%);
+}
+
+
+header {
+    grid-area:  header;
+}
+
+footer {
+    grid-area: footer;
+}

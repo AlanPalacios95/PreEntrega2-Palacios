@@ -6,8 +6,8 @@
     font-weight: 900;
     text-shadow: -3px 5px 2px white;
     padding: 1rem 0;
-
-    &__registro {
+}
+.mi-cuenta__registro {
         background-color: aliceblue;
         width: 33rem;
         height: 23rem;
@@ -19,12 +19,12 @@
         align-items: center;
     }
 
-    &__fieldset {
+.mi-cuenta__fieldset {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
     }
-}
+
 
 input {
     color: black;
@@ -35,8 +35,5 @@ input {
 
 label {
     text-align: center;
-}
-
-label {
     cursor: pointer;
 }

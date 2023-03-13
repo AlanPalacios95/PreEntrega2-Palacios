@@ -1,21 +1,21 @@
-.main__sobrenosotros {
+.main__sobre-nosotros {
     background-color: #e0e0e0;
     padding-bottom: 2rem;
 }
 
-.sobrenosotros__titulo {
+.main__h1 {
     font-family: oswalt;
     font-size: 4rem;
     text-align: center;
 }
 
-.sobrenosotros__img {
+.main__img {
     width: 100%;
     object-fit: cover;
     padding: 0 1rem;
 }
 
-.sobrenosotros__descripcion {
+.main__descripcion {
     margin-top: 2rem;
     font-size: rem;
     padding: 0 1rem;
@@ -27,15 +27,7 @@
     align-items: center;
 }
 
-.diseñador {
-    width: 25%;
-    height: 10rem;
-    border-radius: 100%;
-    object-fit: cover;
-    padding: 1rem;
-}
-
-.periodista {
+.equipo__img {
     width: 25%;
     height: 10rem;
     border-radius: 100%;

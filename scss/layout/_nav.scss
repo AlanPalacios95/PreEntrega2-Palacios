@@ -1,4 +1,5 @@
-.nav__navbar {
+.nav {
+    grid-area: header;
     background-color: black;
     border: 2px solid white;
     font-family: "Roboto", sans-serif;
@@ -18,6 +19,7 @@
         text-decoration: none;
         color: white;
         font-size: 2rem;
+        padding: 0 0.5rem;
     }
     &__link:hover {
         color: #32Ae91;
@@ -25,4 +27,8 @@
     &__button{
         background-color: #ffffff;
     }
+}
+
+.nav__responsive {
+    display: none;
 }
